@@ -9,21 +9,21 @@
 </head>
 <body>
 
-<form action="/handling" method="post">
+<form>
     <div>
         <label for="name">Name:</label>
-        <input type="text" id="name" name="user_name">
+        <input type="text" id="name" oninput="checkInput()" name="user_name">
     </div>
     <div>
         <label for="mail">E-mail:</label>
-        <input type="email" id="mail" name="user_mail">
+        <input type="email" id="mail" oninput="checkInput()" name="user_mail">
     </div>
     <div>
         <label for="msg">Message:</label>
-        <textarea name="user_message" id="msg"></textarea>
+        <textarea name="user_message" id="msg" oninput="checkInput()"></textarea>
     </div>
     <div class="button">
-        <button type="submit">Send your message</button>
+        <button class="submit-button" type="submit" disabled>Send your message</button>
     </div>
 </form>
 
